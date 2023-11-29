@@ -66,6 +66,15 @@
       }
     }
   }
+  .carousel {
+    .prev,
+    .next {
+      margin: 20px;
+      position: relative;
+      left: 38%;
+      top: 50px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -185,6 +194,16 @@
       .button_submit {
         height: 35px;
         font-size: 12px;
+      }
+    }
+  }
+  .carousel {
+    .prev,
+    .next {
+      margin:auto ;
+      img {
+        width: 25px;
+        height: 40px;
       }
     }
   }

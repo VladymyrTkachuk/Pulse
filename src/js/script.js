@@ -1,33 +1,57 @@
-$(document).ready(function () {
-  $(".carousel__inner").slick({
-    // infinite: true,
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
-    speed: 1200,
-    // adaptiveHeight: true,
+// $(document).ready(function () {
+//   $(".carousel__inner").slick({
+//     speed: 1200,
+//     adaptiveHeight: true,
 
-    // arrows: false,
-    prevArrow:
-      '<button type="button" class="slick-prev"><img src="icons/left.svg"> </button>',
-    nextArrow:
-      '<button type="button" class="slick-next"><img src="icons/right.svg"> </button>',
+//     arrows: false,
+//     prevArrow:
+//       '<button type="button" class="slick-prev"><img src="icons/left.svg"> </button>',
+//     nextArrow:
+//       '<button type="button" class="slick-next"><img src="icons/right.svg"> </button>',
 
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          dots: true,
-          arrows: false,
-        },
-      },
-    ],
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           dots: true,
+//           arrows: false,
+//         },
+//       },
+//     ],
+//   });
+// });
 
-    // dots: true,
+const slider = tns({
+  container: ".carousel__inner",
+  items: 1,
+  slideBy: "page",
+  controls: false,
+  nav: false,
+  // controlsContainer: Node,
+  // edgePadding: 20,
+  // gutter: 20,
 
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+  // responsive:
+  //   {
+  //     640: {
+  //       edgePadding: 20,
+  //       gutter: 20,
+  //       items: 2,
+  //     },
+  //     700: {
+  //       gutter: 30,
+  //     },
+  //     900: {
+  //       items: 3,
+  //     },
+  //   } | true,
 
-    // fade: true,
-    // cssEase: "linear",
-  });
+  // controlsText: ['<img src="icons/left.svg">', '<img src="icons/right.svg">'],
+});
+
+document.querySelector(".prev").addEventListener("click", function () {
+  slider.goTo("prev");
+});
+document.querySelector(".next").addEventListener("click", function () {
+  slider.goTo("next");
 });
