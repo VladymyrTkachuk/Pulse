@@ -113,17 +113,7 @@
       font-size: 20px;
       font-weight: 700;
     }
-    &_mini {
-      width: 135px;
-      height: 44px;
-      font-size: 14px;
-      cursor: pointer;
-      transition: 0.5s all;
-      &:hover {
-        box-shadow: 3px 3px 20px #ffffff;
-        border: none;
-      }
-    }
+    
     &__wrapper {
       display: flex;
       width: calc(200% + 40px);
@@ -133,6 +123,7 @@
       margin-right: 0px;
       transform: translateX(-100%);
       transition: 0.5s all;
+      padding-right: 20px;
       &_active {
         transform: translateX(0%);
         margin-right: 20px;

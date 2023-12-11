@@ -1,4 +1,5 @@
-@import "base/variables";
+$main-color: #c70101;
+
 * {
   font-family: "MuseoSansCyrl", sans-serif;
 }
@@ -9,6 +10,7 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+// @import "base/variables";
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/advant";
@@ -20,8 +22,8 @@
 @import "blocks/catalog";
 @import "blocks/review";
 @import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pegeup";
 
-
-@import "base/variables";
 @import "base/mixins";
 @import "base/media";

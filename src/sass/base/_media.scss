@@ -105,6 +105,8 @@
       margin-top: 20px;
       padding-left: 0;
       text-align: center;
+      padding: 0 25px;
+      font-size: 14px;
     }
     &__title {
       font-size: 24px;
@@ -178,7 +180,7 @@
   }
   .catalog {
     .title {
-      font-size: 24px;
+      font-size: 22px;
     }
     &__tab {
       width: 205px;
@@ -189,6 +191,9 @@
 
     .catalog-item {
       width: 250px;
+      &__subtitle {
+        font-size: 14px;
+      }
       hr {
         margin-top: 15px;
       }
@@ -199,10 +204,10 @@
         font-size: 15px;
       }
       &__descr {
-        font-size: 12px;
+        font-size: 11px;
       }
       &__list li {
-        font-size: 12px;
+        font-size: 11px;
       }
     }
   }
@@ -237,7 +242,7 @@
     .button_main {
       width: 200px;
       height: 35px;
-      font-size: 13px;
+      font-size: 12px;
       margin-top: 41px;
     }
   }
@@ -257,7 +262,7 @@
       margin-top: 33px;
     }
     &__subtitle {
-      font-size: 17px;
+      font-size: 15px;
       margin-top: 13px;
     }
     &__descr {
@@ -287,13 +292,13 @@
       }
       .button_submit {
         height: 35px;
-        font-size: 12px;
+        font-size: 11px;
       }
     }
   }
   .carousel {
     .tns-nav {
-      bottom: -32%;
+      bottom: -22%;
     }
   }
   .catalog {
@@ -314,12 +319,21 @@
   .footer {
     &__info {
       width: 255px;
+      height: 245px;
     }
     &__phone {
-      font-size: 15px;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    &__addr {
+      font-size: 16px;
+      margin-bottom: 12px;
     }
     &__social-item {
       margin: 0 5px;
+      img {
+        height: 42px;
+      }
     }
   }
 }
