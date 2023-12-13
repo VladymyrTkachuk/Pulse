@@ -113,10 +113,11 @@
       font-size: 20px;
       font-weight: 700;
     }
-    
+
     &__wrapper {
       display: flex;
       width: calc(200% + 40px);
+      min-height: 332px;
     }
     &__content {
       width: 50%;
@@ -130,6 +131,9 @@
       }
     }
     &__list {
+      ul {
+        padding: 0;
+      }
       position: relative;
       width: 50%;
       margin-left: 20px;
@@ -163,7 +167,7 @@
     }
     &__back {
       position: absolute;
-      bottom: 0;
+      bottom: 7px;
       left: 50%;
       transform: translateX(calc(-50% - 19px));
       display: block;

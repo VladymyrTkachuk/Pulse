@@ -336,4 +336,31 @@
       }
     }
   }
+  .modal {
+    padding: 20px 40px 30px 40px;
+    .feet-form {
+      max-width: 160px;
+      input {
+        height: 39px;
+        width: 163px;
+      }
+      .button_submit {
+        min-width: 163px;
+        height: 43px;
+        font-size: 11px;
+      }
+    }
+    &__close {
+      right: -33px;
+    }
+  }
+  .pageup {
+    bottom: 30px;
+    right: -7px;
+    width: 40px;
+    height: 40px;
+    img {
+      width: 70%;
+    }
+  }
 }

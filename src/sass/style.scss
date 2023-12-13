@@ -1,4 +1,6 @@
-$main-color: #c70101;
+@import "base/variables";
+@import "base/animation";
+
 
 * {
   font-family: "MuseoSansCyrl", sans-serif;
@@ -10,7 +12,6 @@ $main-color: #c70101;
   margin: 0 auto;
   padding: 0 20px;
 }
-// @import "base/variables";
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/advant";
